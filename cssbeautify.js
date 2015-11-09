@@ -322,6 +322,11 @@
                 }
 
                 formatted += ch;
+
+                if (ch === ',' && options.separateSelectors == true) {
+                    formatted += '\n';
+                }
+
                 continue;
             }
 
@@ -467,3 +472,9 @@
     }
 
 }());
+
+
+/*
+ # vi: ts=4 sw=4 et syntax=javascript :
+ */
+
